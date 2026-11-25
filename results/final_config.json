@@ -1,0 +1,29 @@
+{
+ "lr": 0.001,
+ "batch": 64,
+ "weight_decay": 0.0,
+ "scheduler": false,
+ "epochs": 30,
+ "patience": 4,
+ "normalize": false,
+ "ngram_range": [
+  3,
+  5
+ ],
+ "augment": 0.0,
+ "arch": "cnn",
+ "emb_mode": "ngram",
+ "emb_dim": 64,
+ "kernel_sizes": [
+  1,
+  2,
+  3
+ ],
+ "filters": 16,
+ "conv_layers": 1,
+ "residual": false,
+ "hidden": [],
+ "activation": "sigmoid",
+ "dropout": 0.5,
+ "buckets": 50000
+}

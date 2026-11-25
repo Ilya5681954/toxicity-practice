@@ -1,0 +1,158 @@
+[
+ {
+  "name": "исходные данные",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9259259259259259,
+  "val_acc_std": 0.002750742526983019,
+  "val_obf_acc": 0.8723784024988844,
+  "val_f1": 0.9245217686610155,
+  "epoch_time": 1.4011110027345761,
+  "best_epoch": 25.666666666666668,
+  "params": 3206290
+ },
+ {
+  "name": "нормализация",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": true,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9254796965640338,
+  "val_acc_std": 0.002750742526983025,
+  "val_obf_acc": 0.9022757697456493,
+  "val_f1": 0.9227881536669491,
+  "epoch_time": 4.472659476025866,
+  "best_epoch": 24.666666666666668,
+  "params": 3206290
+ },
+ {
+  "name": "аугментация",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.5,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9236947791164658,
+  "val_acc_std": 0.0021860684897663167,
+  "val_obf_acc": 0.9018295403837572,
+  "val_f1": 0.92294329502039,
+  "epoch_time": 7.3853832240801935,
+  "best_epoch": 14.333333333333334,
+  "params": 3206290
+ },
+ {
+  "name": "нормализация + аугментация",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": true,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.5,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9259259259259259,
+  "val_acc_std": 0.005501485053966044,
+  "val_obf_acc": 0.9161088799643017,
+  "val_f1": 0.9244125970313686,
+  "epoch_time": 6.131415374064447,
+  "best_epoch": 12.666666666666666,
+  "params": 3206290
+ }
+]

@@ -1,0 +1,124 @@
+[
+ {
+  "name": "без скрытого слоя",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9058456046407853,
+  "val_acc_std": 0.004550664447650862,
+  "val_obf_acc": 0.8514056224899598,
+  "val_f1": 0.9034317401766812,
+  "epoch_time": 5.408990342543059,
+  "best_epoch": 16.0,
+  "params": 3237442
+ },
+ {
+  "name": "скрытый 64",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [
+    64
+   ],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.8688085676037484,
+  "val_acc_std": 0.009465954232751653,
+  "val_obf_acc": 0.8246318607764391,
+  "val_f1": 0.8676306115879223,
+  "epoch_time": 5.546858841260907,
+  "best_epoch": 10.333333333333334,
+  "params": 3249538
+ },
+ {
+  "name": "скрытые 128, 64",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [
+    128,
+    64
+   ],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.8643462739848281,
+  "val_acc_std": 0.008490092632949794,
+  "val_obf_acc": 0.822400713966979,
+  "val_f1": 0.8645509970662281,
+  "epoch_time": 5.293967295624934,
+  "best_epoch": 9.666666666666666,
+  "params": 3270146
+ }
+]

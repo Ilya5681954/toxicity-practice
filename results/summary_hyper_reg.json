@@ -1,0 +1,236 @@
+[
+ {
+  "name": "исходные параметры",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9259259259259259,
+  "val_acc_std": 0.002750742526983019,
+  "val_obf_acc": 0.8723784024988844,
+  "val_f1": 0.9245217686610155,
+  "epoch_time": 1.4011110027345761,
+  "best_epoch": 25.666666666666668,
+  "params": 3206290
+ },
+ {
+  "name": "dropout 0,3",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.3,
+   "buckets": 50000
+  },
+  "val_acc": 0.9263721552878179,
+  "val_acc_std": 0.007651239714182164,
+  "val_obf_acc": 0.8692547969656403,
+  "val_f1": 0.9250085884536582,
+  "epoch_time": 4.525622952195481,
+  "best_epoch": 23.0,
+  "params": 3206290
+ },
+ {
+  "name": "dropout 0,7",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.7,
+   "buckets": 50000
+  },
+  "val_acc": 0.9232485497545738,
+  "val_acc_std": 0.0060199632142936685,
+  "val_obf_acc": 0.8679161088799643,
+  "val_f1": 0.9215297125629472,
+  "epoch_time": 3.913026517365994,
+  "best_epoch": 27.0,
+  "params": 3206290
+ },
+ {
+  "name": "эмбеддинг 32",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 32,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9210174029451137,
+  "val_acc_std": 0.0068259966714762825,
+  "val_obf_acc": 0.85809906291834,
+  "val_f1": 0.9199106113811409,
+  "epoch_time": 3.1624066820880543,
+  "best_epoch": 27.666666666666668,
+  "params": 1603218
+ },
+ {
+  "name": "эмбеддинг 128",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 128,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9326193663543062,
+  "val_acc_std": 0.005165478314498106,
+  "val_obf_acc": 0.8639000446229362,
+  "val_f1": 0.9314431385859958,
+  "epoch_time": 6.004591118354864,
+  "best_epoch": 17.666666666666668,
+  "params": 6412434
+ },
+ {
+  "name": "L2-регуляризация 1e-5",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 1e-05,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.927264614011602,
+  "val_acc_std": 0.0016696373881186916,
+  "val_obf_acc": 0.8710397144132083,
+  "val_f1": 0.9248451115844342,
+  "epoch_time": 1.986499547820616,
+  "best_epoch": 29.333333333333332,
+  "params": 3206290
+ }
+]

@@ -1,0 +1,244 @@
+[
+ {
+  "name": "окончательная сеть (2.2)",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9259259259259259,
+  "val_acc_std": 0.002750742526983019,
+  "val_obf_acc": 0.8723784024988844,
+  "val_f1": 0.9245217686610155,
+  "epoch_time": 1.4011110027345761,
+  "best_epoch": 25.666666666666668,
+  "params": 3206290,
+  "score": 0.8991521642124052
+ },
+ {
+  "name": "пакет 32",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 32,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.927710843373494,
+  "val_acc_std": 0.007167504865778228,
+  "val_obf_acc": 0.8750557786702364,
+  "val_f1": 0.9262404156897536,
+  "epoch_time": 5.484131728885903,
+  "best_epoch": 17.666666666666668,
+  "params": 3206290,
+  "score": 0.9013833110218652
+ },
+ {
+  "name": "n-граммы 2-4",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    2,
+    4
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.92904953145917,
+  "val_acc_std": 0.0028918967864381196,
+  "val_obf_acc": 0.9004908522980811,
+  "val_f1": 0.9280116437270681,
+  "epoch_time": 4.524082566894062,
+  "best_epoch": 21.0,
+  "params": 3206290,
+  "score": 0.9147701918786255
+ },
+ {
+  "name": "нормализация + аугментация",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": true,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.5,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9259259259259259,
+  "val_acc_std": 0.005501485053966044,
+  "val_obf_acc": 0.9161088799643017,
+  "val_f1": 0.9244125970313686,
+  "epoch_time": 6.131415374064447,
+  "best_epoch": 12.666666666666666,
+  "params": 3206290,
+  "score": 0.9210174029451138
+ },
+ {
+  "name": "пулинг max + mean",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000,
+   "pooling": "maxmean"
+  },
+  "val_acc": 0.9299419901829541,
+  "val_acc_std": 0.00916672850699427,
+  "val_obf_acc": 0.8857652833556449,
+  "val_f1": 0.9300982733908539,
+  "epoch_time": 4.544142107123409,
+  "best_epoch": 24.0,
+  "params": 3206386,
+  "score": 0.9078536367692995
+ },
+ {
+  "name": "все улучшения вместе",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 32,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": true,
+   "ngram_range": [
+    2,
+    4
+   ],
+   "augment": 0.5,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    1,
+    2,
+    3
+   ],
+   "filters": 16,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "sigmoid",
+   "dropout": 0.5,
+   "buckets": 50000,
+   "pooling": "maxmean"
+  },
+  "val_acc": 0.9326193663543062,
+  "val_acc_std": 0.002750742526983019,
+  "val_obf_acc": 0.9263721552878179,
+  "val_f1": 0.932272430978045,
+  "epoch_time": 4.90598141797098,
+  "best_epoch": 7.333333333333333,
+  "params": 3206386,
+  "score": 0.9294957608210621
+ }
+]

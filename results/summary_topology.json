@@ -1,0 +1,234 @@
+[
+ {
+  "name": "Вариант 1: слова, k=3",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "word",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    3
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 0
+  },
+  "val_acc": 0.6956715751896474,
+  "val_acc_std": 0.05843730858415347,
+  "val_obf_acc": 0.6251673360107094,
+  "val_f1": 0.6795889234853614,
+  "epoch_time": 1.7715154163096385,
+  "best_epoch": 9.333333333333334,
+  "params": 880898
+ },
+ {
+  "name": "Слова, k=2,3,4",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "word",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 0
+  },
+  "val_acc": 0.6831771530566711,
+  "val_acc_std": 0.0641670995489598,
+  "val_obf_acc": 0.639892904953146,
+  "val_f1": 0.6786194586776224,
+  "epoch_time": 3.2228196118520045,
+  "best_epoch": 5.333333333333333,
+  "params": 905858
+ },
+ {
+  "name": "Слова, BiGRU",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "gru",
+   "emb_mode": "word",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    3
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 0,
+   "hidden_size": 64
+  },
+  "val_acc": 0.6488174921909861,
+  "val_acc_std": 0.04119352040283543,
+  "val_obf_acc": 0.5975011155734048,
+  "val_f1": 0.618552244293561,
+  "epoch_time": 6.202468607918958,
+  "best_epoch": 3.0,
+  "params": 918594
+ },
+ {
+  "name": "n-граммы, k=2,3,4",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.9058456046407853,
+  "val_acc_std": 0.004550664447650862,
+  "val_obf_acc": 0.8514056224899598,
+  "val_f1": 0.9034317401766812,
+  "epoch_time": 5.586265805764789,
+  "best_epoch": 16.0,
+  "params": 3237442
+ },
+ {
+  "name": "n-граммы, BiGRU",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "gru",
+   "emb_mode": "ngram",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000,
+   "hidden_size": 64
+  },
+  "val_acc": 0.8509593931280678,
+  "val_acc_std": 0.008834890617234878,
+  "val_obf_acc": 0.8099062918340026,
+  "val_f1": 0.8467205750224619,
+  "epoch_time": 7.959849657812403,
+  "best_epoch": 6.333333333333333,
+  "params": 3250178
+ },
+ {
+  "name": "Слова + n-граммы, k=2,3,4",
+  "cfg": {
+   "lr": 0.001,
+   "batch": 64,
+   "weight_decay": 0.0,
+   "scheduler": false,
+   "epochs": 30,
+   "patience": 4,
+   "normalize": false,
+   "ngram_range": [
+    3,
+    5
+   ],
+   "augment": 0.0,
+   "arch": "cnn",
+   "emb_mode": "hybrid",
+   "emb_dim": 64,
+   "kernel_sizes": [
+    2,
+    3,
+    4
+   ],
+   "filters": 64,
+   "conv_layers": 1,
+   "residual": false,
+   "hidden": [],
+   "activation": "relu",
+   "dropout": 0.5,
+   "buckets": 50000
+  },
+  "val_acc": 0.7037037037037037,
+  "val_acc_std": 0.03880399857618857,
+  "val_obf_acc": 0.6501561802766622,
+  "val_f1": 0.6860092233409376,
+  "epoch_time": 5.593849557221499,
+  "best_epoch": 4.666666666666667,
+  "params": 4105858
+ }
+]
